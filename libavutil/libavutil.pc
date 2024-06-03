@@ -1,0 +1,14 @@
+prefix=/Users/qfinn/Downloads/ffmpeg/ffmpeg-6.1.1/android/armv7-a
+exec_prefix=${prefix}
+libdir=/Users/qfinn/Downloads/ffmpeg/ffmpeg-6.1.1/android/armv7-a/lib
+includedir=/Users/qfinn/Downloads/ffmpeg/ffmpeg-6.1.1/android/armv7-a/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 58.29.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -latomic -landroid
+Cflags: -I${includedir}
